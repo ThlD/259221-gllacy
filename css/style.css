@@ -1,3 +1,26 @@
+/* Три правила для домашнего задания*/
+body{
+    min-width: 900px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.375;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #333333;
+    background-color: #849d8f;
+}
+h2 {
+    font-weight: bold;
+    font-size: 35px;
+    color: #ffffff;
+}
+.features-item p {
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*Начинаем строить сетку*/
+
 .clearfix::after {
     content: "";
     display: table;
