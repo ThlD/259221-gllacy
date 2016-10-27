@@ -1,0 +1,71 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.page-header {
+    background: red;
+}
+.container {
+    position: relative;
+    width: 860px;
+    padding: 0;
+    margin: 10px auto;
+    background: green;
+}
+.page-logo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.page-nav {
+    float: left;
+    width: 470px;
+    padding-left: 155px;
+    background: #999933;
+}
+.main-menu > li {
+    position: relative;
+    display: inline-block;
+    min-height: 50px;
+    margin-left: 15px;
+    padding-top: 20px;
+    background: #e4db78;
+}
+.sub-menu {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+.form-search, .form-login {
+    float: left;
+    width: 50px;
+    min-height: 50px;
+    padding-top: 20px;
+    background: #e4db78;
+}
+.block-cart{
+    float: right;
+    width: 50px;
+    min-height: 50px;
+    padding-top: 20px;
+    background: gray;
+}
+.header-bottom {
+    float: right;
+}
+.form, .cart-content, .sub-menu {
+    display: none;
+}
+.form-search:hover .form,
+.form-login:hover .form,
+.block-cart:hover .cart-content,
+ li:hover .sub-menu{
+    display: block;
+}
+ul[class$="menu"] {
+    margin: 0;
+}
+.slider-item-2, .slider-item-3 {
+    display: none;
+}
