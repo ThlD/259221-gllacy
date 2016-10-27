@@ -5,19 +5,20 @@
         <title>Main Page | Gllacy Shop</title>
 <!--Подключил font-awesome.min.css для отображения символа рус. рубля-->
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="page-header">
-            <div class="container">
-                <div class="header-top">
+            <div class="container clearfix">
+                <div class="header-top clearfix">
                     <div class="page-logo">
-                        <img src="img/page-logo.svg" width="" height="" alt="Gllacy Shop">
+                        <img src="img/page-logo.svg" width="154" height="64" alt="Gllacy Shop">
                     </div>
                     <nav class="page-nav">
-                        <ul>
+                        <ul class="main-menu">
                             <li>
                                 <a href="#catalog">Каталог</a>
-                                <ul>
+                                <ul class="sub-menu">
                                     <li>
                                         <a class="catalog-new" href="#new">Новинки</a>
                                     </li>
@@ -71,32 +72,12 @@
                     </div>
                     <div class="block-cart">
                         <a class="cart-btn" href="#cart">Пусто</a>
-                        <div class="cart-content">
-                            <table>
-                                <tr>
-                                    <td><button>Close</button></td>
-                                    <td>Пломбир с апельсиновым джемом</td>
-                                    <td>1,5кг<span>x 200 руб.</span></td>
-                                    <td>300 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td><button>Close</button></td>
-                                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                    <td>1,5кг<span>x 300 руб.</span></td>
-                                    <td>450 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">Итого: 750 руб.</td>
-                                </tr>
-                            </table>
-                            <a class="btn" href="#">Оформить заказ</a>
-                        </div>
                     </div>
                 </div>
-            <div class="header-bottom">
-                <p>С 10 до 20, ежедневно</p>
-                <a type="tel" href="tel:+78124502525"><b>8 812 450-25-25</b></a>
-            </div>
+                <div class="header-bottom">
+                    <p>С 10 до 20, ежедневно</p>
+                    <a type="tel" href="tel:+78124502525"><b>8 812 450-25-25</b></a>
+                </div>
             </div>
         </header>
         <main class="container>">
@@ -114,19 +95,19 @@
                 </div>
                 <div class="promo-item">
                     <div class="slider-item slider-item-1">
-                        <img src="img/promo1.jpg" width="" height="" alt="">
+                        <img src="img/promo1.png" width="900" height="881" alt="">
                         <div class="promo-title">Крем-брюле и пломбир с малиновым джемом
                         </div>
                         <a class="btn promo-btn" href="#giveme">Давайте оба!</a>
                     </div>
                     <div class="slider-item slider-item-2">
-                       <img src="img/promo2.jpg" width="" height="" alt="">
+                       <img src="img/promo2.png" width="900" height="859" alt="">
                         <div class="slider-title">Шоколадный пломбир и лимонный сорбет
                         </div>
                         <a class="btn slider-btn" href="#giveme">Давайте оба!</a>
                     </div>
                     <div class="slider-item slider-item-3">
-                        <img src="img/promo3.jpg" width="" height="" alt="">
+                        <img src="img/promo3.png" width="900" height="852" alt="">
                         <div class="slider-title">Пломбир с помадкой и клубничный щербет
                         </div>
                         <a class="btn slider-btn" href="#giveme">Давайте оба!</a>
@@ -147,8 +128,8 @@
             </div>
             <div class="prod">
                 <div class="prod-item">
-                    <img class="item-image" src="img/orange.jpg" width="" height="" alt="Апельсиновое мороженное">
-                    <b>310<i style="font-size: 86%" class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
+                    <img class="item-image" src="img/orange.png" width="200" height="200" alt="Апельсиновое мороженное">
+                    <b>310<i class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
                     
                     <a class="item-title" href="#icecream1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     <div class="item-hover">
@@ -156,24 +137,24 @@
                     </div>
                 </div>
                 <div class="prod-item">
-                    <img class="item-image" src="img/coffee.jpg" width="" height="" alt="Кофейное мороженное">
-                    <b>380<i style="font-size: 86%" class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
+                    <img class="item-image" src="img/chocolate.png" width="200" height="200" alt="Кофейное мороженное">
+                    <b>380<i class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
                     <a class="item-title" href="#icecream2">Сливочно-кофейное с кусочками шоколада</a>
                     <div class="item-hover">
                         <a class="quick-view" href="#">Быстрый просмотр</a>
                     </div>
                 </div>
                 <div class="prod-item">
-                    <img class="item-image" src="img/strawberry.jpg" width="" height="" alt="Клубничное мороженное">
-                    <b>355<i style="font-size: 86%" class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
+                    <img class="item-image" src="img/strawberry.png" width="200" height="200" alt="Клубничное мороженное">
+                    <b>355<i class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
                     <a class="item-title" href="#icecream3">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     <div class="item-hover">
                         <a class="quick-view" href="#">Быстрый просмотр</a>
                     </div>
                 </div>
                 <div class="prod-item">
-                    <img class="item-image" src="img/brulee.jpg" width="" height="" alt="Мороженное крем-брюле">
-                    <b>415<i style="font-size: 86%" class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
+                    <img class="item-image" src="img/brulee.png" width="200" height="200" alt="Мороженное крем-брюле">
+                    <b>415<i class="fa fa-rub" aria-hidden="true"></i><small>/кг</small></b>
                     <a class="item-title" href="#icecream4">Сливочное крем-брюле с карамельной подливкой</a>
                     <div class="item-hover">
                         <a class="quick-view" href="#">Быстрый просмотр</a>
@@ -251,7 +232,7 @@
                  </ul>
             </nav>
             <div class="footer-copyright">
-                <img src="img/html_logo" alt="html academy">
+                <img src="img/academy-logo.png" alt="html academy">
                  Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &#169; 2016
             </div>
         </footer>
