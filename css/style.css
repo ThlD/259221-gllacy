@@ -1,12 +1,36 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'),
+         url('../fonts/robotobold.woff') format('woff'),
+         url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'),
+         url('../fonts/robotomedium.woff') format('woff'),
+         url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Regular'),
+         url('../fonts/roboto.woff') format('woff'),
+         url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 html, body{
-    min-width: 900px;
-    font-weight: normal;
+    width: 900px;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.375;
+    line-height: 22px;
     font-family: "Roboto","Arial",sans-serif;
     color: #333333;
     background-color: #849d8f;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
 }
 p {
     margin: 0;
@@ -14,7 +38,7 @@ p {
 a {
     text-decoration: none;
     color: #ffffff;
-    border-bottom: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.2);
 }
 input[type="text"],
 input[type="email"],
@@ -153,10 +177,6 @@ body > input[type="radio"] {
 .imagetape-3:checked ~ .site-wrap .slider-item-3 {
     display: block;
 }
-main {
-    width: 900px;
-    margin: 10px auto;
-}
 .container {
     position: relative;
     width: 860px;
@@ -165,31 +185,35 @@ main {
     margin-right: auto;
     font-size: 0px;
 }
+.header-top {
+    
+}
 .page-logo {
     position: relative;
     display: inline-block;
-    top: 5px;
-    left: -5px;
+    top: 9px;
+    left: -6px;
 }
 .page-logo a {
     border-bottom: none;
 }
 .page-nav {
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 445px;
-    margin-top: 20px;
-    padding-left: 0px;
+    width: 435px;
+    margin-top: 21px;
+    padding-left: 10px;
     font-size: 0px;
 }
 .main-menu > li {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 7px 12px;
+    padding: 9px 12px;
     margin-right: 5px;
     font-size: 16px;
-    line-height: 1.125;
+    line-height: 18px;
     font-weight: bold;
 }
 .sub-menu {
@@ -200,6 +224,7 @@ main {
 }
 ul[class$="menu"] {
     margin: 0;
+    padding: 0;
     list-style: none;
 
 }
@@ -219,7 +244,7 @@ ul[class$="menu"] {
     background: rgba(255,255,255,.2);
     border-radius: 50%;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 .form-search::before {
     content: "";
@@ -249,7 +274,7 @@ ul[class$="menu"] {
     font-size: 14px;
     line-height: 16px;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 .form-login::before {
     content: "";
@@ -277,11 +302,11 @@ ul[class$="menu"] {
     padding-left: 45px;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-top: 20px;
+    margin-top: 23px;
     background: rgba(255,255,255,.2);
     border-radius: 15px;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
 }
 .block-cart::before {
     content: "";
@@ -303,7 +328,7 @@ ul[class$="menu"] {
     padding-left: 45px;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-top: 20px;
+    margin-top: 23px;
     background: #f7f6f3;
     border-radius: 15px;
     font-size: 14px;
@@ -333,30 +358,31 @@ ul[class$="menu"] {
 .breadcrumbs {
     float: left;
     font-size: 0px;
-    padding-top: 40px;
+    padding-top: 34px;
 }
 .breadcrumbs .divider {
     color: white;
     font-size: 16px;
     line-height: 16px;
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 6px;
 }
 .breadcrumbs a {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
-    
 }
 .header-bottom {
     float: right;
+    text-align: right;
+    color: #ffffff;
+    margin-top: -2px;
+    margin-right: -2px;
+}
+.header-bottom p {
     font-size: 14px;
     line-height: 16px;
     font-weight: bold;
-    text-align: right;
-    color: #ffffff;
-}
-.header-bottom p {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 .header-bottom a{
     font-size: 22px;
@@ -372,28 +398,38 @@ h1 {
 }
 .sorting {
     font-size: 14px;
+
 }
 .sorting-form fieldset {
     display: inline-block;
     vertical-align: middle;
     border: none;
     color: white;
+    margin: 0;
+    padding: 0;
+
 }
  .sorting-form .btn-apply {
     display: inline-block;
     vertical-align: middle;
+    width: 144px;
+    height: 36px;
 }
 .sorting-form fieldset:nth-of-type(1) {
-    width: 200px;
+    width: 208px;
+    height: 74px
 }
 .sorting-form fieldset:nth-of-type(2) {
-    width: 230px;
+    width: 233px;
+    height: 74px
 }
 .sorting-form fieldset:nth-of-type(3) {
-    width: 320px;
+    width: 412px;
+    height: 74px
 }
 .sorting-form fieldset:nth-of-type(4) {
     width: 700px;
+    height: 56px
 }
 .sorting-form select {
     border-radius: 18px;
@@ -458,7 +494,7 @@ h1 {
     margin-right: 20px;
     margin-bottom: 40px;
 }
-.prod-item:nth-of-type(4n+4) {
+.prod-item:nth-of-type(4n) {
     margin-right: 0px;
 }
 .prod-item .hit-icon {
@@ -551,10 +587,10 @@ h1 {
     background-position: 0px 0px;
 }
 .main-info-descr:nth-of-type(2)::before {
-    background-position: -49px 0px;
+    background-position: -98px 0px;
 }
 .main-info-descr:nth-of-type(3)::before {
-    background-position: -98px 0px;
+    background-position: -49px 0px;
 }
 .main-info-descr:nth-of-type(4)::before {
     background-position: -149px 0px;
@@ -742,15 +778,21 @@ h1 {
 }
 .footer-menu li {
     display: inline-block;
+    position: relative;
     vertical-align: top;
     font-size: 13px;
     line-height: 1.39;
     padding-left: 22px;
     padding-top: 5px;
 }
-.footer-menu li:first-of-type{
+.footer-menu li:first-of-type::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
     font-weight: bold;
-    background: url("../img/heart-icon.png") no-repeat 0px 9px;
+    background: url("../img/sprite.png") no-repeat -80px -49px;
 }
 .footer-menu li:nth-of-type(2n-1){
     width: 123px;
