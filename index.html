@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Main Page | Gllacy Shop</title>
         <link rel="stylesheet" href="css/normalize.css">
+<!--        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">-->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -20,59 +21,66 @@
                             </div>
                             <nav class="page-nav">
                                 <ul class="main-menu">
-                                    <li>
+                                    <li class="main-menu-item">
                                         <a href="#catalog">Каталог</a>
                                         <ul class="sub-menu">
-                                            <li>
+                                            <li class="sub-menu-item">
                                                 <a class="catalog-new" href="#new">Новинки</a>
                                             </li>
-                                            <li>
+                                            <li class="sub-menu-item">
                                                 <a href="catalog.html">Сливочное</a>
                                             </li>
-                                            <li>
+                                            <li class="sub-menu-item">
                                                 <a href="#">Щербеты</a>
                                             </li>
-                                            <li>
+                                            <li class="sub-menu-item">
                                                 <a href="#">Фруктовый лед</a>
                                             </li>
-                                            <li>
+                                            <li class="sub-menu-item">
                                                 <a href="#">Мелорин</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li class="main-menu-item">
                                         <a href="#payment">Доставка и оплата</a>
                                     </li>
-                                    <li>
+                                    <li class="main-menu-item">
                                         <a href="#info">О Компании</a>
                                     </li>
                                 </ul>
                             </nav>
                             <div class="form-search">
-                                <a class="search-btn" href="#search"></a>
-                                <form class="form" action="/echo" method="post">
-                                    <label>
-                                        <input type="search" name="search" placeholder="Что ищем?">
-                                    </label>
-                                </form>
+                                <a class="search-btn" href="#search">Поиск</a>
+                                <div class="form-wrapper">
+                                    <form class="form" action="/echo" method="post">
+                                        <div class="input-control">
+                                            <input type="search" name="search" id="search" placeholder="Что ищем?">
+                                            <label for="search">Что ищем?</label>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                             <div class="form-login">
                                 <a class="login-btn" href="#login">Вход</a>
-                                <form class="form" action="/echo" method="post">
-                                    <label for="email">
-                                        <input type="email" name="email" id="email" placeholder="Электронная почта" required>
-                                    </label>
-                                    <label for="pass">
-                                        <input type="password" name="pass" id="pass" placeholder="Пароль" required>
-                                    </label>
-                                    <div class="half-width">
-                                        <a class="btn" href="#enter">Войти</a>
-                                    </div>
-                                    <div class="half-width">
-                                        <a href="#">Забыли пароль?</a>
-                                        <a href="#">Новая регистрация</a>
-                                    </div>
-                                </form>
+                                <div class="form-wrapper">
+                                    <form class="form" action="/echo" method="post">
+                                        <div class="input-control">
+                                            <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+                                            <label for="email">Электронная почта</label>
+                                        </div>
+                                        <div class="input-control">
+                                            <input type="password" name="pass" id="pass" placeholder="Пароль" required>
+                                            <label for="pass">Пароль</label>
+                                        </div>
+                                        <div class="half-width">
+                                            <a class="btn" href="#enter">Войти</a>
+                                        </div>
+                                        <div class="half-width">
+                                            <a href="#">Забыли пароль?</a>
+                                            <a href="#">Новая регистрация</a>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                             <div class="block-cart">
                                 <a class="cart-btn" href="#cart">Пусто</a>
