@@ -54,7 +54,7 @@
                                 <div class="form-wrapper">
                                     <form class="form" action="/echo" method="post">
                                         <div class="input-control">
-                                            <input type="search" name="search" id="search" placeholder="Что ищем?">
+                                            <input type="text" name="search" id="search" required placeholder="Что ищем?">
                                             <label for="search">Что ищем?</label>
                                         </div>
                                     </form>
@@ -65,15 +65,15 @@
                                 <div class="form-wrapper">
                                     <form class="form" action="/echo" method="post">
                                         <div class="input-control">
-                                            <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+                                            <input type="text" name="email" id="email" required placeholder="Электронная почта">
                                             <label for="email">Электронная почта</label>
                                         </div>
                                         <div class="input-control">
-                                            <input type="password" name="pass" id="pass" placeholder="Пароль" required>
+                                            <input type="password" name="pass" id="pass" required placeholder="Пароль">
                                             <label for="pass">Пароль</label>
                                         </div>
                                         <div class="half-width">
-                                            <a class="btn" href="#enter">Войти</a>
+                                            <a class="btn btn-enter" href="#enter">Войти</a>
                                         </div>
                                         <div class="half-width">
                                             <a href="#">Забыли пароль?</a>
@@ -137,50 +137,50 @@
                             <div class="prod-item">
                                 <div class="hit-icon"></div>
                                 <img class="item-image" src="img/orange.png" width="200" height="200" alt="Апельсиновое мороженное">
-                                <b class="prod-price">310&#8381;<small>/кг</small></b>
+                                <b class="prod-price">310 &#8381;<small>/кг</small></b>
                                 <div class="item-title">
                                     <a href="#icecream1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                                 </div>
                                 <div class="item-hover">
-                                    <a class="quick-view" href="#">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#">Быстрый просмотр</a>
                                 </div>
                             </div>
                             <div class="prod-item">
                                 <div class="hit-icon"></div>
                                 <img class="item-image" src="img/chocolate.png" width="200" height="200" alt="Кофейное мороженное">
-                                <b class="prod-price">380&#8381;<small>/кг</small></b>
+                                <b class="prod-price">380 &#8381;<small>/кг</small></b>
                                 <div class="item-title">
                                     <a href="#icecream2">Сливочно-кофейное с кусочками шоколада</a>
                                 </div>
                                 <div class="item-hover">
-                                    <a class="quick-view" href="#">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#">Быстрый просмотр</a>
                                 </div>
                             </div>
                             <div class="prod-item">
                                 <div class="hit-icon"></div>
                                 <img class="item-image" src="img/strawberry.png" width="200" height="200" alt="Клубничное мороженное">
-                                <b class="prod-price">355&#8381;<small>/кг</small></b>
+                                <b class="prod-price">355 &#8381;<small>/кг</small></b>
                                 <div class="item-title">
                                 <a href="#icecream3">Сливочно-клубничное с присыпкой из белого шоколада</a>
                                 </div>
                                 <div class="item-hover">
-                                    <a class="quick-view" href="#">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#">Быстрый просмотр</a>
                                 </div>
                             </div>
                             <div class="prod-item">
                                 <div class="hit-icon"></div>
                                 <img class="item-image" src="img/brulee.png" width="200" height="200" alt="Мороженное крем-брюле">
-                                <b class="prod-price">415&#8381;<small>/кг</small></b>
+                                <b class="prod-price">415 &#8381;<small>/кг</small></b>
                                 <div class="item-title">
                                 <a href="#icecream4">Сливочное крем-брюле с карамельной подливкой</a>
                                 </div>
                                 <div class="item-hover">
-                                    <a class="quick-view" href="#">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#">Быстрый просмотр</a>
                                 </div>
                             </div>
                         </div>
                         <div class="main-info">
-                            <p><b>Магазин Глейси - это онлайн и офлайн магазин по продаже<br>мороженного собственного производства на развес</b></p>
+                            <p><b>Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже<br>мороженого собственного производства на развес</b></p>
                             <div class="main-info-descr">
                                 <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                             </div>
@@ -191,21 +191,22 @@
                                 <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                             </div>
                             <div class="main-info-descr">
-                                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+                                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                             </div>
                         </div>
                         <div class="index-content">
                             <div class="post-info">
                                 <h2>Новое в нашем блоге</h2>
-                                <p><a href="#post"><span>10 способов сервировки </span><span>фруктовых щербетов к </span> <span>столу</span></a></p>
+                                <p><a href="#post"><span>10 &nbsp;способов сервировки </span><span>фруктовых щербетов к </span> <span>столу</span></a></p>
                             </div>
                             <div class="subscribe">
-                                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                                <p>Подпишитесь на нашу сладкую рассылку<br> и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                                 <div class="subscribe-form">
                                     <form action="https://echo.htmlacademy.ru" method="post">
-                                        <label>
-                                           <input type="email" name="email" value="" placeholder="Электронная почта"  required>
-                                        </label>
+                                       <div class="input-control">
+                                       <input type="text" name="email" id="subscr" required placeholder="Электронная почта">
+                                        <label for="subscr">Электронная почта</label>
+                                        </div>
                                         <button class="btn subscribe-btn" type="submit" name="subscribe">Отправить</button>
                                     </form>
                                 </div>
@@ -264,5 +265,25 @@
                 </footer>
             </div>
         </div>
+        <div class="feedback-form">
+            <form action="#" method="post">
+                <button class="feedback-btn-close" type="button" title="Закрыть"></button>
+                <div class="feedback-title">Мы обязательно вам ответим!</div>
+                <div class="input-control">
+                    <input type="text" name="username" id="username" placeholder="Как вас зовут?" required>
+                    <label for="username">Как вас зовут?</label>
+                </div>
+                <div class="input-control">
+                    <input type="text" name="email" id="your-email" placeholder="Ваша почта для ответа?" required>
+                    <label for="your-email">Ваша почта для ответа?</label>
+                </div>
+                <div class="input-control">
+                    <textarea name="comment" id="comment" placeholder="Напишите что-нибудь..." required></textarea>
+                    <label for="comment">Напишите что-нибудь...</label>
+                </div>
+                <button class="btn feedback-btn-send" type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="overlay"></div>
     </body>
 </html>
