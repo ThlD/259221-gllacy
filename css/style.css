@@ -1384,7 +1384,7 @@ h1
 {
     position: relative;
 
-    margin-right: 22px;
+    margin-right: 23px;
     padding-left: 30px;
 }
 
@@ -1730,6 +1730,7 @@ h1
 
     vertical-align: top;
 
+    border-radius: 16px;
     background: url("../img/strawberry-bg.png") no-repeat;
     background-color: #fff;
 }
@@ -1788,6 +1789,7 @@ h1
 
     vertical-align: top;
 
+    border-radius: 16px;
     background: url("../img/post-bg.png") no-repeat;
     background-color: #f9f7f4;
 }
