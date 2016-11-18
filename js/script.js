@@ -8,9 +8,8 @@ var feedbackUsername = popup.querySelector("[name=username]");
 var feedbackEmail = popup.querySelector("[name=email]");
 var feedbackComment = popup.querySelector("[name=comment]");
 var form = popup.querySelector("form");
-var storageUsername = localStorage.getItem("feedbackUsername");
-var storageEmail = localStorage.getItem("feedbackEmail");
-
+var storageUsername = localStorage ? localStorage.getItem("feedbackUsername") : false;
+var storageEmail = localStorage ? localStorage.getItem("feedbackEmail") : false;
 
 link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -18,18 +17,10 @@ link.addEventListener("click", function (event) {
     overlay.classList.add("overlay-show");
     feedbackUsername.focus();
     
-    if (storageUsername) {
+    if (storageUsername && storageEmail) {
         feedbackUsername.value = storageUsername;
-        feedbackEmail.focus();
-    } else {
-        feedbackUsername.focus();
-    }
-    
-    if (storageEmail) {
         feedbackEmail.value = storageEmail;
         feedbackComment.focus();
-    } else {
-        feedbackEmail.focus();
     }
 });
 
