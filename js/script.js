@@ -14,19 +14,19 @@ var myMap;
 var myPlacemark;
 
 function init() {
-    myMap = new ymaps.Map('map', {
+    myMap = new ymaps.Map("map", {
         center: [59.939449, 30.327968],
         zoom: 16
     }, {
-        searchControlProvider: 'yandex#search'
+        searchControlProvider: "yandex#search"
     });
     
     myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-        balloonContent: 'Магазин Gllacy'
+        balloonContent: "Магазин Gllacy"
     },
         {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
+            iconLayout: "default#image",
+            iconImageHref: "img/map-marker.png",
             iconImageSize: [218, 142],
             iconImageOffset: [-45, -142]
         });
