@@ -43,6 +43,18 @@ body
     background-color: #849d8f;
 }
 
+.container
+{
+    font-size: 0;
+
+    position: relative;
+
+    width: 860px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 p
 {
     margin: 0;
@@ -291,18 +303,6 @@ body > input[type="radio"]
 .imagetape-3:checked ~ .site-wrap .slider-item-3
 {
     display: block;
-}
-
-.container
-{
-    font-size: 0;
-
-    position: relative;
-
-    width: 860px;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .page-logo
@@ -916,6 +916,7 @@ textarea:focus ~ label
 
     width: 15px;
     height: 15px;
+    margin-top: 10px;
 
     cursor: pointer;
     vertical-align: top;
@@ -928,7 +929,7 @@ textarea:focus ~ label
 .cart-item .item-del::after
 {
     position: absolute;
-    top: 15px;
+    top: 7px;
     left: 0;
 
     width: 15px;
@@ -982,13 +983,13 @@ textarea:focus ~ label
 
 .cart-item:nth-of-type(1) p::before
 {
-    background: url("../img/orange.png") no-repeat;
+    background: url("../img/mini-orange.jpg") no-repeat;
     background-size: cover;
 }
 
 .cart-item:nth-of-type(2) p::before
 {
-    background: url("../img/strawberry.png") no-repeat;
+    background: url("../img/mini-strawberry.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -1559,6 +1560,8 @@ h1
 {
     width: 200px;
     height: 200px;
+
+    border-radius: 50%;
 }
 
 .prod-item .item-title
@@ -1850,26 +1853,34 @@ h1
 {
     position: relative;
 
-    width: 900px;
     height: 430px;
-    margin: 0 auto;
     margin-bottom: 12px;
 }
 .location .map {
-    width: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
     height: 430px;
+
     background: #ece4c6 url("../img/map.png") no-repeat;
+}
+
+.feedback-container {
+    width: 860px;
+    margin: auto;
 }
 
 .feedback
 {
-    position: absolute;
-    top: 62px;
-    right: 20px;
+    float: right;
+    position: relative;
 
     width: 277px;
     padding-top: 29px;
     padding-left: 25px;
+    margin-top: 62px;
 
     opacity: .98;
     border-radius: 16px;
